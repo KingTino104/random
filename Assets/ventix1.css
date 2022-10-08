@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+:root {
+  --main-bg: #0b0c1b;
+  --blue: #0060fe;
+  --white: #fff;
+  --gray: #9193a8;
+  --dark-color: #141526;
+  --semi-dark: #1a1b2e;
+  --light-dark: #212235;
+  --orange: #2e8b57;
+  --orangee: #ffdab9;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--blue);
+  background: rgb(0, 0, 0, 0.4);
+}
+
+::selection {
+  color: var(--blue);
+  background: rgb(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--main-bg);
+}
+
+/* Main CSS */
+
+header {
+  background-image: linear-gradient(
+      rgba(26, 27, 46, 0.4),
+      rgba(20, 21, 38, 0.8)
+    ),
+    url("https://cdn.aquaprojects.pro/css/main.png");
+  background-color: var(--semi-dark);
+  border-bottom-right-radius: 50% 20%;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* End Main CSS */
+
+/* MC Host CSS */
+
+.mc-header {
+  padding: 140px 0 !important;
+  background-image: linear-gradient(
+      rgba(26, 27, 46, 0.2),
+      rgba(20, 21, 38, 0.2)
+    ),
+    url("https://cdn.aquaprojects.pro/css/mchost.jpg");
+}
+
+.mc-header h5 {
+  font-weight: 200;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.mc-header h1 {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.mc-header p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* End MC Host CSS */
+
+/* Web hosting css */
+
+.web-header {
+  padding: 140px 0 !important;
+  background-image: linear-gradient(
+      rgba(26, 27, 46, 0.2),
+      rgba(20, 21, 38, 0.2)
+    ),
+    url("https://cdn.aquaprojects.pro/css/mc3.webp");
+}
+
+.web-header h5 {
+  font-weight: 200;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.web-header h1 {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.web-header p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* End Web Hosting CSS */
+
+.xbtn {
+  border: 0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 26px;
+  display: inline-block;
+  white-space: nowrap;
+  outline: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.xbtn:focus,
+.xbtn:hover,
+.xbtn:active {
+  text-decoration: none;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.discount {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.discount .btn {
+  border: 2px dashed var(--white);
+  font-weight: 700;
+  padding: 2px 14px;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .discount .btn {
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+}
+
+.navbar-dark {
+  background-color: transparent;
+}
+
+.navbar-dark .navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: 1rem 1rem;
+}
+
+.navbar-dark .navbar-nav .xbtn {
+  margin-top: 6px;
+}
+
+.dropdown-menu {
+  background: var(--semi-dark);
+  border: none;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  border-top: 2px solid var(--blue);
+}
+
+.dropdown-menu-right {
+  min-width: 4rem;
+}
+
+.dropdown-menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--blue);
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu::before {
+    top: 48px;
+  }
+}
+
+.dropdown-item {
+  color: var(--gray);
+  text-align: center;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background: var(--dark-color);
+  color: var(--white);
+}
+
+.xeno .navbar {
+  background: var(--dark-color);
+}
+
+.header-box h1 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 52px;
+}
+
+.header-box h1 span {
+  color: var(--blue);
+}
+
+.header-box h1 span {
+  color: var(--orangee);
+}
+
+.header-box ul {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.header-box ul li {
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-box ul li i {
+  color: var(--blue);
+  margin-right: 6px;
+}
+
+.header-box img {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+
+#info p {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#plans {
+  background: var(--semi-dark);
+}
+
+#plans h1,
+#faqs h1,
+#features h1 {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--orangee);
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+
+.card {
+  color: var(--white);
+  background: var(--light-dark);
+  border: none;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card .xbtn {
+  padding: 8px 24px;
+}
+
+.card .card-title {
+  font-weight: 600;
+}
+
+#faqs .faq-section .card {
+  background: var(--light-dark);
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+#faqs .faq-section .card-header {
+  background: var(--semi-dark);
+  border-radius: 10px;
+}
+
+#faqs .faq-section .card-body {
+  color: var(--gray);
+}
+
+#faqs .faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#faqs .faq-section .mb-0 > a h5 {
+  text-decoration: none;
+  outline: none;
+  color: var(--white);
+}
+
+#faqs .faq-section .mb-0 > a:after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+}
+
+#faqs .faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 600;
+}
+
+#footer {
+  background: var(--semi-dark);
+}
+
+#footer h3 {
+  color: var(--white);
+}
+
+#footer p {
+  color: var(--gray);
+}
+
+#footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#footer ul li a {
+  color: var(--gray);
+}
+
+#footer .copy {
+  color: var(--white);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#footer .social a {
+  color: var(--gray);
+  padding: 0px 10px;
+}
+
+#legal {
+  color: var(--gray);
+}
+
+#legal h2 {
+  color: var(--white);
+  font-weight: 700;
+}
+
+#plans-1 .card-header {
+  background: var(--blue);
+}
+
+#plans-1 .price {
+  background: rgb(255, 255, 255, 0.4);
+}
+
+#plans-1 h1 {
+  font-weight: 700;
+}
+
+#plans-1 .xbtn {
+  text-align: center;
+}
+
+#plans-1 .card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+#custom-solution {
+  background-image: linear-gradient(
+      rgba(0, 96, 254, 0.6),
+      rgba(0, 96, 254, 0.6)
+    ),
+    url("https://demo.lawniczak.fr/assets/custom/mc-header.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#custom-solution h2 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+#custom-solution p {
+  color: var(--light);
+}
+
+hr {
+  border-top: 1px solid var(--light);
+}
+
+.badge-xeno {
+  background: var(--semi-dark);
+}
+
+.badge-xeno h2 {
+  font-size: 24px;
+  padding: 4px 12px;
+}
